@@ -2,7 +2,7 @@
 
 ### Reference Application
 
-A simple rails4 app using ruby 2.0.0 for testing deployments on anyines.com .
+A simple Rails 4 app using Ruby 2.0.0 to test deployments on [anyines.com](http://anyines.com).
 
 ### Install Codebase
 
@@ -12,11 +12,11 @@ Clone the git repository
     $ cd rails4ruby2example
     $ bundle
 
-Create database and run migrations
+Create a database and run migrations
 
     $ rake db:create db:migrate
 
-Run the rails server
+Run the ```rails server```
 
     $ rails s
 
@@ -24,7 +24,7 @@ Run the rails server
 
 From a web browser access the site via [localhost:3000](http://localhost:3000)
 
-## Deploy the application to Anynines
+## Deploy the application to anynines
 
 Install the a9s gem
 
@@ -35,7 +35,7 @@ Edit the deployment manifest
     $ cp manifest.yml.example manifest.yml
     $ vim manifest.yml -> exchange all occurences of your_app_name with your desired application identifier
 
-The https://github.com/cloudfoundry/heroku-buildpack-ruby.git buildpack is referenced within the provided manifest.yml.example . This buildpack is needed to support rails4 and ruby2.
+The https://github.com/cloudfoundry/heroku-buildpack-ruby.git buildpack is referenced within the provided ```manifest.yml.example```. This buildpack is needed to support Rails 4 and Ruby 2.
 
 Deploy the application 
 
