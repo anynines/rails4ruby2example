@@ -1,4 +1,4 @@
-## Paperclip Demo
+## rails4ruby2example
 
 ### Reference Application
 
